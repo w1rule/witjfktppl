@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.qiaozhilei.easy-text-effects": {
+      "version": "https://github.com/LeiQiaoZhi/Easy-Text-Effects-for-Unity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "102249bba7e95ec4f3c3cfbaf4f0afd9b1b4ccce"
+    },
     "com.unity.2d.animation": {
       "version": "14.0.3",
       "depth": 0,
@@ -106,6 +115,16 @@
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
         "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.cinemachine": {
+      "version": "3.1.6",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.splines": "2.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -230,6 +249,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.settings-manager": {
+      "version": "2.1.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.shadergraph": {
       "version": "17.4.0",
       "depth": 1,
@@ -238,6 +264,17 @@
         "com.unity.render-pipelines.core": "17.4.0",
         "com.unity.searcher": "4.9.3"
       }
+    },
+    "com.unity.splines": {
+      "version": "2.8.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.settings-manager": "1.0.3"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.sysroot.base": {
       "version": "1.1.0",
@@ -305,6 +342,23 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "dev.yarnspinner.unity": {
+      "version": "https://github.com/YarnSpinnerTool/YarnSpinner-Unity.git#current",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0bd966b8f0ebe6600fc554cdb854a8b33cc3d54d"
+    },
+    "dev.yarnspinner.unity.samples": {
+      "version": "https://github.com/YarnSpinnerTool/YarnSpinner-Unity-Samples.git#current",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "dev.yarnspinner.unity": "3.1.0",
+        "com.unity.shadergraph": "14.0.0"
+      },
+      "hash": "13f258df535f432de0517b2db519af9a19561a0b"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

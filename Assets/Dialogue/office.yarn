@@ -1,9 +1,39 @@
 title: office
 ---
-
+<<declare $i_level = 0>>
 Ashi stant: You're late again.
+
 -> Sorry
     Emcee: Traffic was awful.
+    Ashi stant: You live upstairs.
 -> Sarcastic
     Emcee: You can never trust clocks these days.
+    Ashi stant: Could you trust me banging on your door and screaming 30 minutes ago?
+Ashi: Ok someone just died.
+Emcee: Elaborate.
+Ashi: I won't, but I will say some stuff to test if this works how I think it will.
+Emcee: What?
+<<jump topic>>
+===
+title: topic
+---
+-> Body
+    Emcee: So someone was stabbed?
+    Ashi stant: That's rough buddy.
+    <<jump topic>>
+-> Topic that leads to...
+    <<set $i_level += 1>>
+    Ashi stant: You probably haven't seen the third option?
+    Emcee: At least how what should work?
+    <<jump topic>>
+-> This <<if $i_level >= 1>>
+    <<set $i_level += 1>>
+    Ashi stant: This.
+    Emcee: oh.
+    <<jump topic>>
+-> That's enough, take me to the scene <<if $i_level >= 2>>
+    Ashi stant: Best I can do is Brazil.
+    Emcee: What?
+    Ashi stant: What?
+    <<load_scene brazil>>
 ===

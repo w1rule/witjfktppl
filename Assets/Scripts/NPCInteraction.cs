@@ -8,6 +8,11 @@ public class NPCInteraction : MonoBehaviour
 
     private bool playerNearby = false;
 
+    void Start()
+    {
+        dialogueRunner.LoadStateFromPersistentStorage("yarnsave");
+    }
+
     void Update()
     {
         if (playerNearby && Input.GetKeyDown(KeyCode.E))
